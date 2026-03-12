@@ -5,7 +5,8 @@
       "Read(//mnt/c/Users/admin/project/fims/gateway/src/main/resources/**)",
       "Bash(xxd /mnt/c/Users/admin/project/fims/gateway/src/main/resources/application.yml)",
       "Bash(xxd \"C:/Users/admin/project/fims/gateway/src/main/resources/application.yml\" | head -20)",
-      "Bash(find /c/Users/admin/project/fims/user-service/src/main/java -type f -name \"*.java\" | xargs ls -la)"
+      "Bash(find /c/Users/admin/project/fims/user-service/src/main/java -type f -name \"*.java\" | xargs ls -la)",
+      "Bash(cd \"C:/Users/admin/project/fims\" && ./gradlew gateway:dependencies --configuration compileClasspath 2>&1 | grep -E \"\\(gateway|FAILED|Could not\\)\" | head -20)"
     ]
   }
 }
